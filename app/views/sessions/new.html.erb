@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_with url: sessions_path, local: true do |f| %>
+              <%= f.text_field :name,
+                          autofocus: true,
+                          required: true,
+                          class: "form-control string required input mb-3 mt-2",
+                          placeholder: "Username",
+                          label: false %>
+                <%= f.submit 'Sign In', class: "btn btn-outline-success px-5 mt-3" %>
+<% end %>
+</div>

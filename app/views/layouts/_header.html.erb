@@ -1,0 +1,8 @@
+<div class="container">
+  <% if logged_in? %>
+    Hiya, <%= current_user.name %>! You're looking mighty fine today!
+    <%=link_to "Log Out", signout_path %>
+  <% else %>
+    <%= link_to "Log In", login_path %>
+  <% end %>
+</div>
