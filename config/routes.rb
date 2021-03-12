@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     get 'signout', to: 'sessions#destroy'
   end
 
-  root 'users#index'
+  root 'users#new'
 end
