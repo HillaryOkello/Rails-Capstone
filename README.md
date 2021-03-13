@@ -19,6 +19,9 @@
 - Bootstrap
 - SQL
 
+## Live Demo
+
+[Live Demo Link](https://hilnexprojectmanager.herokuapp.com/)
 
 ### Prerequisites
 
