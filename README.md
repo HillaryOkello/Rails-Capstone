@@ -5,7 +5,7 @@
 > This is an application that allows you to group hours spent on different projects at your university.
 > You can group your projects in different categories and note down how many hours you spend on each project.
 
-##Screenshot
+## Screenshot
 ![Rails Capstone](https://user-images.githubusercontent.com/61744527/111038167-9bb07580-8438-11eb-81f8-119cc52a09fa.PNG)
 
 ## Built With
