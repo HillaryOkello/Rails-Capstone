@@ -1,3 +1,29 @@
-<div class="container">
+<%
+=begin%>
+ <div class="container">
   <h1><%= current_user.name %></h1>
+  <ul>
+  </ul>
+</div> 
+<%
+=end%>
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8 mt-4">
+      <div class="card text-center shadow mb-5 bg-white rounded">
+        <div class="card-header font-italic">
+          <h1> Username: <%= current_user.name%></h1>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <%= link_to "All my  projects",  projects_path, class: "btn btn-outline-info mt-3" %>
+          <%= link_to "All  my external projects", projects_path, class: "btn btn-outline-danger mt-3"%>
+          <%= link_to "All categories", categories_path, class: "btn btn-outline-info mt-3" %>
+        </div>
+        <div class="card-footer text-muted">
+            <p><%= link_to "Log out", signout_path, method: "delete" %></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

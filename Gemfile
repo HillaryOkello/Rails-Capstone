@@ -3,8 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rubocop'
 
-gem 'bootstrap-sass'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.6.0'
+gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
 gem 'pg', '~> 1.2', '>= 1.2.3'

@@ -1,0 +1,29 @@
+<h1 class= "text-center text-white">Total Projects : <%= @projects.size%></h1>
+<table class="table table-hover container text-white">
+  <thead>
+    <tr>
+      <th scope="col">category</th>
+      <th scope="col">Project Title</th>
+      <th scope="col">Hrs</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @projects.each do |project|%>
+      <%if current_user.projects.any?%>
+        
+        <tr class="card-body">
+          <td><%= project.category.name if project.category %></td>
+          <td><%= project.title%></td>
+          <td><%= project.hours%></td>
+          <td><%= project.created_at.strftime("%a-%d-%Y")%></td>
+        </tr>
+        <%end%>
+    <%end%>
+  </tbody>
+</table>
+
+  <div class=" text-center" >
+      <%= link_to "Add New Project ", new_project_path, class: "btn btn-outline-primary "%>
+      <%= link_to "Back", new_project_path, class: "btn btn-outline-success "%>
+  </div>

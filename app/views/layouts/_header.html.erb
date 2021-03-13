@@ -1,9 +1,17 @@
-<div class="container">
-  <% if logged_in? %>
-    Hiya, <%= current_user.name %>! You're looking mighty fine today!
-    <%=link_to "Log Out", signout_path %>
-  <% else %>
-    <%= link_to "Log In", login_path %>
-    <%= link_to "sign Up", signup_path %>
-  <% end %>
-</div>
+<nav class="navbar navbar-light bg-primary justify-content-between">
+  <a class="navbar-brand text-white">Hilnex Project Manager</a>
+  <div id="navbarNavAltMarkup">
+    <div class="navbar-nav d-flex flex-row">
+      <% if logged_in? %>
+        <%= link_to "All my  projects",  projects_path, class: "nav-item nav-link active mx-2 text-white" %>
+        <%= link_to "All  my external projects", projects_path, class: "nav-item nav-link mx-2 text-white"%>
+        <%= link_to "All categories", categories_path, class: "nav-item nav-link mx-2 text-white" %>
+        <%= link_to "Profile", current_user, class: "nav-item nav-link mx-2 text-white" %>
+        <%=link_to "Log Out", signout_path, class: "nav-item nav-link mx-2 text-white" %>
+      <% else %>
+        <%= link_to "Log In", login_path, class: "nav-item nav-link mx-2 text-white" %>
+        <%= link_to "sign Up", signup_path, class: "nav-item nav-link mx-2 text-white" %>
+      <% end %>
+    </div>
+  </div>
+</nav>
