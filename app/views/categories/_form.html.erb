@@ -1,0 +1,13 @@
+<h1>Categories</h1>
+<%= form_for @category do |f|%>
+  <div class="field">
+    <%= f.label :name ,class: "col-sm-2 col-form-label font-weight-bold"%>
+    <%= f.text_field :name, class: "form-control", placeholder: "Category Name" %>
+  </div>
+
+  <br>
+
+  <div>
+    <%= f.submit "Add new category", class: "btn btn-outline-primary" %>
+  </div> 
+<%end%>

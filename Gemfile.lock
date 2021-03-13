@@ -261,4 +261,4 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 BUNDLED WITH
-   2.2.5
+   2.2.11

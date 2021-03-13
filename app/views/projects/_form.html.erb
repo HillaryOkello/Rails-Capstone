@@ -1,0 +1,24 @@
+<h5 class ="font-weight-bold  text-center text-white">Create a New Project:</h5>
+
+<%= form_for @project do |f|%>
+  <div class="field">
+    <%= f.label :title, class: "col-sm-2 col-form-label font-weight-bold text-white" %>
+    <%= f.text_field :title, class: "form-control", placeholder: "Project Title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hours, class: "col-sm-2 col-form-label font-weight-bold text-white" %>
+    <%= f.text_field :hours, class: "form-control", placeholder: "Hours clocked" %>
+  </div>
+
+  <div class="field mt-3">
+    <%= f.label :Category, class: "col-sm-2 col-form-label font-weight-bold text-white" %>
+    <%= f.select :category_id,Category.all.map{|c| [c.name,c.id]}, class: "form-control", placeholder: "choose category" %>
+  </div>
+  <br>
+    <div class="actions">
+      <%= f.submit class: "btn btn-outline-primary " %>
+    </div>
+<%end%>
+<br>
+<%= link_to " Add Category", new_category_path, class: "btn btn-outline-secondary"%>
