@@ -1,16 +1,17 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
 gem 'rubocop'
 
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.6.0'
+gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
+gem 'pg', '~> 1.2', '>= 1.2.3'
+# gem 'postgres', '~> 0.8.1'
+gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
