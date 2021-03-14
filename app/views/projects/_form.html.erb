@@ -3,12 +3,12 @@
 <%= form_for @project do |f|%>
   <div class="field">
     <%= f.label :title, class: "col-sm-2 col-form-label font-weight-bold text-white" %>
-    <%= f.text_field :title, class: "form-control", placeholder: "Project Title" %>
+    <%= f.text_field :title, required: true, class: "form-control", placeholder: "Project Title" %>
   </div>
 
   <div class="field">
     <%= f.label :hours, class: "col-sm-2 col-form-label font-weight-bold text-white" %>
-    <%= f.text_field :hours, class: "form-control", placeholder: "Hours clocked" %>
+    <%= f.number_field :hours, required: true, class: "form-control", placeholder: "Hours clocked" %>
   </div>
 
   <div class="field mt-3">
