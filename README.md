@@ -76,7 +76,3 @@ Contributions, issues and feature requests are welcome! Start by:
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](LICENSE) licensed.
