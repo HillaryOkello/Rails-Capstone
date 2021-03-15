@@ -48,9 +48,9 @@ To get a local copy up and running follow these simple example steps:
 
 ### Run tests
 
-- Run `rails s`  or  `rails server`
-- Now go to  http://localhost:3000
-- You will se the project working! 
+```
+  rpsec --format documentation
+```
 
 
 ## Author
