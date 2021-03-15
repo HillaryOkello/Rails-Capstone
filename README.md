@@ -35,7 +35,6 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
-- Fork this project
 - Open your terminal
 - Clone this project `git clone git@github.com:HillaryOkello/Rails-Capstone.git`
 - Go to the project folder `cd Rails-Capstone`
