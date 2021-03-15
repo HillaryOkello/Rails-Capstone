@@ -1,8 +1,8 @@
-<h1>Categories</h1>
+<h1 class="text-white">Categories</h1>
 <%= form_for @category do |f|%>
   <div class="field">
-    <%= f.label :name ,class: "col-sm-2 col-form-label font-weight-bold"%>
-    <%= f.text_field :name, class: "form-control", placeholder: "Category Name" %>
+    <%= f.label :name ,class: "col-sm-2 col-form-label font-weight-bold text-white"%>
+    <%= f.text_field :name, required: true, class: "form-control", placeholder: "Category Name" %>
   </div>
 
   <br>

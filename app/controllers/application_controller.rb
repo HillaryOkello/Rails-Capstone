@@ -2,12 +2,10 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   protect_from_forgery with: :exception
 
-  before_action :login_required, :except=>[:new, :create]
+  before_action :login_required, except: %i[new create]
 
   def login_required
-    if !logged_in?
-      redirect_to login_path, :notice => "log in required"
-    end
+    redirect_to login_path, notice: 'log in required' unless logged_in?
   end
 
   def logged_in?
@@ -26,5 +24,4 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user
-
 end

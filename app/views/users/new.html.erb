@@ -1,8 +1,8 @@
 <div class="container">
-  <h1 class="text-white">Sing up</h1>
+  <h1 class="text-white">Sign up</h1>
   <%= form_for @user do |f| %>
     <%= f.label :name, class: 'text-white' %>
-    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.text_field :name, required: true, class: 'form-control' %>
     <%= f.submit "Create User", class: 'mt-2 btn btn-primary' %>
   <% end %>
 </div>
