@@ -3,6 +3,7 @@
   <thead>
     <tr>
       <th scope="col">Category Name</th>
+      <th scope="col">Icon</th>
       <th scope="col">Created</th>
     </tr>
   </thead>
@@ -10,6 +11,7 @@
 <% @categories.each do |c|%>
     <tr>
       <td><%= c.name%></td>
+      <td><%= c.icon%></td>
       <td><%= c.created_at.strftime("%a-%d-%Y")%></td>
     </tr>
   <%end%>
