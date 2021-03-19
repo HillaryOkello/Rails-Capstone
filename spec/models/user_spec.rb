@@ -7,3 +7,4 @@ RSpec.describe User, type: :model do
     expect(@user.valid?).to be true
   end
 end
+
