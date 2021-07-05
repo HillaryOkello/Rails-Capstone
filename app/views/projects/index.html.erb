@@ -1,0 +1,19 @@
+<h1 class= "text-center text-white">Total Projects : <%= @projects.size %></h1>
+<table class="table table-hover container text-white">
+  <thead>
+    <tr>
+      <th scope="col">category</th>
+      <th scope="col">Project Title</th>
+      <th scope="col">Hrs</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @projects %>
+  </tbody>
+</table>
+
+  <div class=" text-center" >
+      <%= link_to "Add New Project ", new_project_path, class: "btn btn-outline-primary "%>
+      <%= link_to "Back", new_project_path, class: "btn btn-outline-success "%>
+  </div>

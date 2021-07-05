@@ -1,0 +1,24 @@
+<h1 class= "text-center text-white">Categories created : <%= @categories.count%></h1>
+<table class="table table-hover container text-white">
+  <thead>
+    <tr>
+      <th scope="col">Category Name</th>
+      <th scope="col">Icon</th>
+      <th scope="col">Created</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @categories.each do |c|%>
+    <tr>
+      <td><%= c.name%></td>
+      <td><%= c.icon%></td>
+      <td><%= c.created_at.strftime("%a-%d-%Y")%></td>
+    </tr>
+  <%end%>
+  </tbody>
+</table>
+
+  <div class=" text-center" >
+    <%= link_to "Add New Category ", new_category_path, class: "btn btn-outline-primary "%>
+    <%= link_to "Back", new_project_path, class: "btn btn-outline-success "%>
+  </div>

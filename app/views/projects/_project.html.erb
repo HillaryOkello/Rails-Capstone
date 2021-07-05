@@ -1,0 +1,8 @@
+<%if current_user.projects.any?%>
+  <tr class="card-body">
+    <td><%= project.category.name if project.category %></td>
+    <td><%= project.title%></td>
+    <td><%= project.hours%></td>
+    <td><%= project.created_at.strftime("%a-%d-%Y")%></td>
+  </tr>
+<%end%>
